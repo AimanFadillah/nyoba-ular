@@ -2,6 +2,9 @@ import random
 
 lobang_kosong = ["[]"] * 4
 
+print(lobang_kosong.join())
+exit()
+
 print(f'''
 ================================
 TIKUS BERSEMBUNYI DILOBANG MANA?
