@@ -1,18 +1,24 @@
 import random
 
-print('''
+lobang_kosong = ["[]"] * 4
+
+print(f'''
 ================================
 TIKUS BERSEMBUNYI DILOBANG MANA?
 ================================
-           [] [] [] []
+    {lobang_kosong}
 ================================
 ''')
 
 tebakan = random.randint(1,4)
+lobang = lobang_kosong.copy()
+lobang[tebakan - 1] = "[$_$]"
 pilihan = int(input("Lubang :"))
 
 if tebakan == pilihan :
-    print(''' 
+    print(f''' 
+================================
+  {lobang}
 ================================
 BERIKAN DIA HUKUMAN MATI
 ================================
@@ -24,10 +30,10 @@ ADUUH LUBANG YANG MANA
 ================================
     ''')
 else :
-    print('''
+    print(f'''
+================================
+  {lobang}
 ================================
 YAHHH KAMU SALAH LUBANG
 ================================
     ''')
-
-
