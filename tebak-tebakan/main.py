@@ -2,14 +2,11 @@ import random
 
 lobang_kosong = ["[]"] * 4
 
-print(lobang_kosong.join())
-exit()
-
 print(f'''
 ================================
 TIKUS BERSEMBUNYI DILOBANG MANA?
 ================================
-    {lobang_kosong}
+        {"".join(lobang_kosong)}
 ================================
 ''')
 
@@ -21,7 +18,7 @@ pilihan = int(input("Lubang :"))
 if tebakan == pilihan :
     print(f''' 
 ================================
-  {lobang}
+        {"".join(lobang)}
 ================================
 BERIKAN DIA HUKUMAN MATI
 ================================
@@ -35,7 +32,7 @@ ADUUH LUBANG YANG MANA
 else :
     print(f'''
 ================================
-  {lobang}
+        {"".join(lobang)}
 ================================
 YAHHH KAMU SALAH LUBANG
 ================================
