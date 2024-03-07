@@ -1,12 +1,10 @@
 import random
+from pesan import pesan
 
 lobang_kosong = ["[]"] * 4
 
-print(f'''
-================================
-TIKUS BERSEMBUNYI DILOBANG MANA?
-================================
-        {"".join(lobang_kosong)}
+pesan("TIKUS BERSEMBUNYI DILOBANG MANA?")
+print(f'''{"".join(lobang_kosong)}
 ================================
 ''')
 
@@ -18,22 +16,14 @@ pilihan = int(input("Lubang :"))
 if tebakan == pilihan :
     print(f''' 
 ================================
-        {"".join(lobang)}
-================================
-BERIKAN DIA HUKUMAN MATI
-================================
+{"  ".join(lobang)}
     ''')
+    pesan("BERIKAN DIA HUKUMAN MATI")
 elif pilihan > 4 or pilihan < 1:
-    print(''' 
-================================
-ADUUH LUBANG YANG MANA
-================================
-    ''')
+    pesan("ADUHH LUBANG YANG MANA")
 else :
     print(f'''
 ================================
-        {"".join(lobang)}
-================================
-YAHHH KAMU SALAH LUBANG
-================================
+    {"  ".join(lobang)}
     ''')
+    pesan("YAHH KAMU SALAH LOBANG")
